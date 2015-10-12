@@ -9,6 +9,7 @@ body {
     background-color: #E9EAEE;
 	font-weight: 300;
 	font-size: 16px;
+	background-image:  url("/img/background-sm.jpg");
 }
 
 header {
@@ -17,17 +18,6 @@ header {
 
 h2{
 	color: #BC6026;
-}
-
-@media screen and (min-width: 768px) {
-	body {
-		font-size: 20px;
-	}
-	
-	h2 {
-		text-align: center;
-		padding-bottom: 1em;
-	}
 }
 
 svg {
@@ -80,6 +70,15 @@ ul{
 }
 
 @media screen and (min-width: 768px){
+	body {
+		font-size: 20px;
+	}
+	
+	h2 {
+		text-align: center;
+		padding-bottom: 1em;
+	}
+	
 	#navbar {
 		background-color: rgba(24, 28, 34, 0.8);
 	}
@@ -89,15 +88,16 @@ ul{
 	}
 		
 	.container{
-		background-image: url("img/background-sm.jpg");
+		background-image: url('/img/background-sm.jpg');
 		text-align: right;
 		min-height: 550px;
+		color: white;
 	}
 }
 
 @media screen and (min-width: 992px){
 	.container{
-		background-image: url("img/background-md.jpg");
+		background-image: url('/img/background-md.jpg');
 	}
 	
 	#dawgcoffee{
@@ -107,7 +107,7 @@ ul{
 
 @media screen and (min-width: 1200px){
 	.container{
-		background-image url("img/background-lg.jpg");
+		background-image: url('/img/background-lg.jpg');
 	}
 }
 
