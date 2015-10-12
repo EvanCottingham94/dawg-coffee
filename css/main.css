@@ -37,3 +37,18 @@ svg {
 ul li {
 	display: inline;
 }
+
+#navlist{
+	color: white;
+}
+#navbar {
+	position: fixed;
+	background-color: #181C22;
+}
+
+
+@media screen and (min-width: 768px){
+		#navbar {
+			background-color: rgba(24, 28, 34, 0.8);
+		}
+	}
