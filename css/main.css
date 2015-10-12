@@ -1,1 +1,35 @@
 /* Your stylesheet goes here */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300italic,300");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+body {
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #E9EAEE;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+header {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2{
+	color: #BC6026;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+	
+	h2 {
+		text-align: center;
+		padding-bottom: 1em;
+	}
+}
+
+svg {
+	height: 1em;
+}
