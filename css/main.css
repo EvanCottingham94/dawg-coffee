@@ -33,3 +33,7 @@ h2{
 svg {
 	height: 1em;
 }
+
+ul li {
+	display: inline;
+}
