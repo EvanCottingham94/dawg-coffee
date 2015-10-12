@@ -34,21 +34,43 @@ svg {
 	height: 1em;
 }
 
-ul li {
+#navlist li {
+	font-size: 16px;
 	display: inline;
 }
 
-#navlist{
+#navlist a{
 	color: white;
+	padding-left: .5em;
+	font-variant: small-caps;
 }
+
+#navlist svg {
+	margin-left: 15px;
+	fill: currentColor;
+}
+
+#navlist a:hover {
+	color: #D87E28;
+	text-decoration: none;
+}
+
+.coffeeIcon {
+	margin-left: 15px;
+}
+
 #navbar {
 	position: fixed;
 	background-color: #181C22;
+	width: 100%;
 }
-
 
 @media screen and (min-width: 768px){
 		#navbar {
 			background-color: rgba(24, 28, 34, 0.8);
+		}
+		
+		#navlist a{
+			padding-left: 1em;
 		}
 	}
