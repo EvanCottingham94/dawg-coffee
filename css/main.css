@@ -50,6 +50,10 @@ svg {
 	fill: currentColor;
 }
 
+ul{
+	padding-left: 0px;
+}
+
 #navlist a:hover {
 	color: #D87E28;
 	text-decoration: none;
@@ -59,18 +63,51 @@ svg {
 	margin-left: 15px;
 }
 
+#dawgcoffee{
+	padding-top: 3em;
+}
+
 #navbar {
 	position: fixed;
 	background-color: #181C22;
 	width: 100%;
 }
 
-@media screen and (min-width: 768px){
-		#navbar {
-			background-color: rgba(24, 28, 34, 0.8);
-		}
-		
-		#navlist a{
-			padding-left: 1em;
-		}
+@media screen and (max-width: 768px){
+	.container p{
+		display: none;
 	}
+}
+
+@media screen and (min-width: 768px){
+	#navbar {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+		
+	#navlist a{
+		padding-left: 1em;
+	}
+		
+	.container{
+		background-image: url("img/background-sm.jpg");
+		text-align: right;
+		min-height: 550px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.container{
+		background-image: url("img/background-md.jpg");
+	}
+	
+	#dawgcoffee{
+		font-size: 4em;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.container{
+		background-image url("img/background-lg.jpg");
+	}
+}
+
