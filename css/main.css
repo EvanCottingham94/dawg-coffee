@@ -1,29 +1,42 @@
-/* Your stylesheet goes here */
+
+/* imports for font and Bootstrap stylesheet */
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,300italic,300");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
+/* sets default font-family, background color, font weight to 300 and font size to 16px*/
 body {
 	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
     background-color: #E9EAEE;
 	font-weight: 300;
 	font-size: 16px;
-	background-image:  url("/img/background-sm.jpg");
 }
 
-header {
+/* sets default font-family header elements */
+h1, h2, h3 {
 	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+
 h2{
 	color: #BC6026;
+	text-align: center;
 }
 
 svg {
 	height: 1em;
 }
 
+/* default style settings for the navigation bar */
+#navbar {
+	position: fixed;
+	background-color: #181C22;
+	width: 100%;
+	z-index: 10; /* ensures navbar remains at the front of all other elements. */
+}
+
+/* style settings for listed elements within the navigation bar */
 #navlist li {
 	font-size: 16px;
 	display: inline;
@@ -40,42 +53,113 @@ svg {
 	fill: currentColor;
 }
 
-ul{
-	padding-left: 0px;
-}
-
 #navlist a:hover {
 	color: #D87E28;
 	text-decoration: none;
+}
+
+/* distances coffee icon in navigation bar 15px from left side of screen  */
+ul{
+	padding-left: 0px;
 }
 
 .coffeeIcon {
 	margin-left: 15px;
 }
 
-#dawgcoffee{
+/* default style settings for elements in the header */
+#header{
 	padding-top: 3em;
 }
 
-#navbar {
-	position: fixed;
-	background-color: #181C22;
-	width: 100%;
+#headline p{
+	font-style: italic;
 }
 
+/* default style settings for area underneath header (coffee cup and motto) */
+#headline svg{
+	height: 1.5em;
+	margin-bottom: 1em;
+	fill: #D87E28;
+}
+
+/* default style settings for the cafe's information section */
+#cafeInfo{
+	text-align: center;
+	background-color: #dbdce3;
+}
+
+#cafeInfo img{
+	padding-bottom: 20px;
+	border: rounded;
+    border-radius: 5px;
+}
+
+#cafeInfo svg{
+	fill: #BC6026;
+}
+
+/* default style settings for the section with contact information */
+#contact div{
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+/* default style settings for description of items on menu */
+#menu dd{
+	font-style: italic;
+	padding-left: 1em;
+}
+
+#story{
+	background-color: #dbdce3;
+}
+
+#story img{
+	float: right;
+	clear: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border: rounded;
+    border-radius: 5px;
+}
+
+/* default style settings for footer */
+footer{
+	background: #afb3c2;
+	border-top: 3px solid #D87E28;
+	overflow: hidden;
+}
+
+footer p{
+	font-size: 12px;
+	padding-top: 1em;
+}
+
+/* style settings for the text at the bottom of the "Orders" page */
+#orderHeadline h3{
+	text-align: left;
+	margin-left: 1.5em;
+}
+
+/* sets style when screen size is less than 768px wide or equal */
 @media screen and (max-width: 768px){
-	.container p{
+	#header p{
+		display: none;
+	}
+	
+	#headline svg{
 		display: none;
 	}
 }
 
+/*sets style when screen width is greater than or equal to 768px */
 @media screen and (min-width: 768px){
 	body {
 		font-size: 20px;
 	}
 	
 	h2 {
-		text-align: center;
 		padding-bottom: 1em;
 	}
 	
@@ -87,27 +171,48 @@ ul{
 		padding-left: 1em;
 	}
 		
-	.container{
-		background-image: url('/img/background-sm.jpg');
+	#header{
+		background-image: url('../img/background-sm.jpg');
 		text-align: right;
 		min-height: 550px;
 		color: white;
 	}
-}
-
-@media screen and (min-width: 992px){
-	.container{
-		background-image: url('/img/background-md.jpg');
+	
+	#headline {
+		size: 1.25em;
+		text-align: center;
+		margin-top: 3em;
+		margin-bottom: 3em;
 	}
 	
-	#dawgcoffee{
+	#rightFoot p{
+		text-align: right;
+	}
+}
+
+/* sets style when screen width is greater than or equal to 769px wide (spec says 769px on the style requirements for the story section) */
+@media screen and (min-width: 769px){
+	#story img{
+		max-height: 400px;
+	}
+
+}
+
+/* sets style when screen width is greater than or equal to 992px wide */
+@media screen and (min-width: 992px){
+	#header{
+		background-image: url('../img/background-md.jpg');
+	}
+	
+	#header h1{
 		font-size: 4em;
 	}
 }
 
+/* sets style when screen width is greater than 
 @media screen and (min-width: 1200px){
-	.container{
-		background-image: url('/img/background-lg.jpg');
+	#header{
+		background-image: url('../img/background-lg.jpg');
 	}
 }
 
