@@ -176,6 +176,7 @@ footer p{
 		text-align: right;
 		min-height: 550px;
 		color: white;
+		background-size: cover;
 	}
 	
 	#headline {
@@ -195,7 +196,6 @@ footer p{
 	#story img{
 		max-height: 400px;
 	}
-
 }
 
 /* sets style when screen width is greater than or equal to 992px wide */
